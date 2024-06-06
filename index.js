@@ -10,16 +10,16 @@ const { execSync } = require('child_process');
 const FILE_PATH = process.env.FILE_PATH || './temp'; // 运行文件夹，节点文件存放目录
 const projectPageURL = process.env.URL || '';        // 填写项目域名可开启自动访问保活，非标端口的前缀是http://
 const intervalInseconds = process.env.TIME || 120;   // 自动访问间隔时间（120秒）
-const UUID = process.env.UUID || '23dc9018-b3b7-42fb-834c-1b327be4117a';
+const UUID = process.env.UUID || '726d65de-4736-454f-9dfc-14df46834eb4';
 const TOTK_SERVER = process.env.TOTK_SERVER || 'nz.abc.cn';      // 哪吒3个变量不全不运行
 const TOTK_PORT = process.env.TOTK_PORT || '5555';              // 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls
 const TOTK_KEY = process.env.TOTK_KEY || '';                   // 哪吒客户端密钥
-const TOKE_DOMAIN = process.env.TOKE_DOMAIN || 'wefwe.kgfkyfd.eu.org';              // 固定隧道域名，留空即启用临时隧道
-const TOKE_AUTH = process.env.TOKE_AUTH || '{"AccountTag":"6d324bacb114ecfd5ba33954743869b5","TunnelSecret":"6WY7JKECF731XIbwJloIrQbYDBkhwSYRtP1HM89OTYg=","TunnelID":"c6301c39-5940-4a64-818c-cfbe0c20cf30"}';                 // 固定隧道json或token，留空即启用临时隧道
+const TOKE_DOMAIN = process.env.TOKE_DOMAIN || 'ai.yutfrdryuj7.gay';              // 固定隧道域名，留空即启用临时隧道
+const TOKE_AUTH = process.env.TOKE_AUTH || '{"AccountTag":"e5c5122810111ae869b1af274c267e93","TunnelSecret":"G+Yla0hscCV19UVe817p5+Klp4FSlxJtaohR6pnwft8=","TunnelID":"71f31fa1-033d-460a-9b07-22a2f6b1f418"}';                 // 固定隧道json或token，留空即启用临时隧道
 const CFIP = process.env.CFIP || 'skk.moe';                   // 优选域名或优选ip
 const CFPORT = process.env.CFPORT || 443;                    // 节点端口
 const NAME = process.env.NAME || 'Vls';                     // 节点名称
-const ARGO_PORT = process.env.ARGO_PORT || 28080;           // Argo端口，使用固定隧道token需和cf后台设置的端口对应
+const ARGO_PORT = process.env.ARGO_PORT || 28380;           // Argo端口，使用固定隧道token需和cf后台设置的端口对应
 const PORT = process.env.SERVER_PORT || process.env.PORT || 7000; // 节点订阅端口，若无法订阅请手动改为分配的端口
 
 //创建运行文件夹
